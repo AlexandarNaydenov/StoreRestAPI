@@ -9,7 +9,10 @@ public class GetOneSecondHalfPrice extends Deal{
     {
         HashMap<Product,Integer> quantity = new HashMap<Product,Integer>();
         int i=0;
-        if(products.size() >= 3) i = 3;
+        if(products.size() >= 3) 
+        {
+            i = 3;
+        }
         for(;i< products.size();i++)
         {
             quantity.putIfAbsent(products.get(i), 0);
